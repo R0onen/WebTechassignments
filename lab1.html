@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple webpage about the Solar System">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>The Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <h1>Exploring the Solar System</h1>
+        <p>Welcome to our page about the Solar System! Discover interesting facts about the planets.</p>
+    </header>
+
+    <!-- Navigation-->
+    <nav>
+        <a href="#planets">Planets</a> | 
+        <a href="#facts">Interesting Facts</a> | 
+        <a href="#form">Contact Us</a>
+    </nav>
+
+    <!-- Main-->
+    <section>
+        <h2 id="planets">Planets of the Solar System</h2>
+        <p>The solar system consists of the following planets:</p>
+        <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+        </ul>
+
+        <h3>Planets' Distance from the Sun (in million km)</h3>
+        <table>
+            <tr>
+                <th>Planet</th>
+                <th>Distance from Sun</th>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>57.9</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>108.2</td>
+            </tr>
+            <tr>
+                <td>Earth</td>
+                <td>149.6</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>227.9</td>
+            </tr>
+        </table>
+
+        <!-- Image-->
+        <h3>The Solar System</h3>
+        <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcRcf9FiFK243A65CF7cgZJWygno8HBu3vGP1w64W4Dq-W2BGK7h1YoR5fSsjWbkM_sC&psig=AOvVaw0tKEP7vX8D28jnML4wZ4jJ&ust=1725731710930000&source=images&cd=vfe&opi=89978449&ved=0CAwQjRxqFwoTCJjF5d3xrogDFQAAAAAdAAAAABAE" alt="Solar System" width="400">
+    </section>
+
+    <!-- Interesting Facts-->
+    <section>
+        <h2 id="facts">Interesting Facts About the Solar System</h2>
+        <p>Here are some fun facts:</p>
+        <ul>
+            <li>Jupiter is the largest planet.</li>
+            <li>Mars is home to the tallest mountain in the solar system, Olympus Mons.</li>
+            <li>Venus has the hottest surface temperature of any planet.</li>
+        </ul>
+    </section>
+
+    <!-- Form-->
+    <section>
+        <h2 id="form">Contact Us</h2>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <p>&copy; 2024 Solar System Explorer</p>
+    </footer>
+</body>
+</html>
